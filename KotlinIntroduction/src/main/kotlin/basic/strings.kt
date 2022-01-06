@@ -1,3 +1,5 @@
+package basic
+
 fun main(){
     /**
      * Strings possuem diversos métodos associados;

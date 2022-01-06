@@ -1,3 +1,5 @@
+package basic
+
 const val EQUAL = 0;
 const val LESS = -1;
 const val MORE = 1;
