@@ -1,7 +1,8 @@
 const val EQUAL = 0;
 const val LESS = -1;
 const val MORE = 1;
-
+const val MIN_AGE = 16;
+const val MAX_AGE = 68;
 fun main() {
     /** NULLABILITY
      * qualquer tipo pode ser nulo, porém isso deve ser explicitado na declaração de variável
@@ -69,11 +70,35 @@ fun main() {
     println(!(x.equals(y)));
 
     // OPERADORES LÓGICOS
-    /*
+    /**
      * quando utiliza-se o comando, é recomendado colocar a expressão entre parênteses
      * E (&&) - (expressão 1) and (expressão 2)
      * OU (||) - (expressão 1) or (expressão 2)
+     *
+     * OPERADORES IN E RANGE
+     * IN - se o valor está presente em uma lista ou em uma faixa (range) de valores
+     * RANGE - cria um intervalo de valores que inicia no primeiro parâmetro e acaba no segundo
+     *
      */
+    // exemplo
+    val bingo = listOf(3, 9, 0, 1, 2, 20, 12);
+    println("");
+    println(15 in bingo); // in
+
+    println(12 in 0..20); // range
+
+    // outro exemplo
+    var age = (10..100).random();
+    println(age);
+    println(age in MIN_AGE..MAX_AGE);
+    //println(age >= MIN_AGE && age <= MAX_AGE); - demonstração de como seria
+    // fazendo verificação
+    if (age in MIN_AGE..MAX_AGE){
+        println("Pode doar sangue");
+    } else {
+        println("Não pode doar sangue");
+    }
+
 
 
 

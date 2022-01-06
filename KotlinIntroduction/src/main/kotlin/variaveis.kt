@@ -1,10 +1,10 @@
 import kotlin.Unit.toString
 
 // declarando constantes
-const val MIN_AGE = 16;
-const val MAX_AGE = 68
+//const val MIN_AGE = 16;
+//const val MAX_AGE = 68
 
-fun main_variaveis(){
+fun main(){
     // declaração de variáveis
     /**
      * VAR - valor mutável, CamelCase:

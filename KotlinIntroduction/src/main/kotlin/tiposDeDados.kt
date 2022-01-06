@@ -1,4 +1,4 @@
-fun main_tipos() {
+fun main() {
     // tipos de dados
     /**
      * INT
